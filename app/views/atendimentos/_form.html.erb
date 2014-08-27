@@ -1,0 +1,89 @@
+<%= form_for(@atendimento) do |f| %>
+  <% if @atendimento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@atendimento.errors.count, "error") %> prohibited this atendimento from being saved:</h2>
+
+      <ul>
+      <% @atendimento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :AnoAtendimento %><br />
+    <%= f.number_field :AnoAtendimento %>
+  </div>
+  <div class="field">
+    <%= f.label :TrimestreAtendimento %><br />
+    <%= f.number_field :TrimestreAtendimento %>
+  </div>
+  <div class="field">
+    <%= f.label :MesAtendimento %><br />
+    <%= f.number_field :MesAtendimento %>
+  </div>
+  <div class="field">
+    <%= f.label :DataAtendimento %><br />
+    <%= f.date_select :DataAtendimento %>
+  </div>
+  <div class="field">
+    <%= f.label :CodigoRegiao %><br />
+    <%= f.number_field :CodigoRegiao %>
+  </div>
+  <div class="field">
+    <%= f.label :Regiao %><br />
+    <%= f.text_field :Regiao %>
+  </div>
+  <div class="field">
+    <%= f.label :UF %><br />
+    <%= f.text_field :UF %>
+  </div>
+  <div class="field">
+    <%= f.label :CodigoTipoAtendimento %><br />
+    <%= f.number_field :CodigoTipoAtendimento %>
+  </div>
+  <div class="field">
+    <%= f.label :DescricaoTipoAtendimento %><br />
+    <%= f.text_field :DescricaoTipoAtendimento %>
+  </div>
+  <div class="field">
+    <%= f.label :CodigoAssunto %><br />
+    <%= f.number_field :CodigoAssunto %>
+  </div>
+  <div class="field">
+    <%= f.label :DescricaoAssunto %><br />
+    <%= f.text_field :DescricaoAssunto %>
+  </div>
+  <div class="field">
+    <%= f.label :GrupoAssunto %><br />
+    <%= f.text_field :GrupoAssunto %>
+  </div>
+  <div class="field">
+    <%= f.label :CodigoProblema %><br />
+    <%= f.number_field :CodigoProblema %>
+  </div>
+  <div class="field">
+    <%= f.label :DescricaoProblema %><br />
+    <%= f.text_field :DescricaoProblema %>
+  </div>
+  <div class="field">
+    <%= f.label :GrupoProblema %><br />
+    <%= f.text_field :GrupoProblema %>
+  </div>
+  <div class="field">
+    <%= f.label :SexoConsumidor %><br />
+    <%= f.text_field :SexoConsumidor %>
+  </div>
+  <div class="field">
+    <%= f.label :FaixaEtariaConsumidor %><br />
+    <%= f.text_field :FaixaEtariaConsumidor %>
+  </div>
+  <div class="field">
+    <%= f.label :CEPConsumidor %><br />
+    <%= f.number_field :CEPConsumidor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

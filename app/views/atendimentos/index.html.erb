@@ -1,0 +1,59 @@
+<h1>Listing atendimentos</h1>
+
+<table>
+  <tr>
+    <th>Anoatendimento</th>
+    <th>Trimestreatendimento</th>
+    <th>Mesatendimento</th>
+    <th>Dataatendimento</th>
+    <th>Codigoregiao</th>
+    <th>Regiao</th>
+    <th>Uf</th>
+    <th>Codigotipoatendimento</th>
+    <th>Descricaotipoatendimento</th>
+    <th>Codigoassunto</th>
+    <th>Descricaoassunto</th>
+    <th>Grupoassunto</th>
+    <th>Codigoproblema</th>
+    <th>Descricaoproblema</th>
+    <th>Grupoproblema</th>
+    <th>Sexoconsumidor</th>
+    <th>Faixaetariaconsumidor</th>
+    <th>Cepconsumidor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @atendimentos.each do |atendimento| %>
+  <tr>
+    <td><%= atendimento.AnoAtendimento %></td>
+    <td><%= atendimento.TrimestreAtendimento %></td>
+    <td><%= atendimento.MesAtendimento %></td>
+    <td><%= atendimento.DataAtendimento %></td>
+    <td><%= atendimento.CodigoRegiao %></td>
+    <td><%= atendimento.Regiao %></td>
+    <td><%= atendimento.UF %></td>
+    <td><%= atendimento.CodigoTipoAtendimento %></td>
+    <td><%= atendimento.DescricaoTipoAtendimento %></td>
+    <td><%= atendimento.CodigoAssunto %></td>
+    <td><%= atendimento.DescricaoAssunto %></td>
+    <td><%= atendimento.GrupoAssunto %></td>
+    <td><%= atendimento.CodigoProblema %></td>
+    <td><%= atendimento.DescricaoProblema %></td>
+    <td><%= atendimento.GrupoProblema %></td>
+    <td><%= atendimento.SexoConsumidor %></td>
+    <td><%= atendimento.FaixaEtariaConsumidor %></td>
+    <td><%= atendimento.CEPConsumidor %></td>
+    <td><%= link_to 'Show', atendimento %></td>
+    <td><%= link_to 'Edit', edit_atendimento_path(atendimento) %></td>
+    <td><%= link_to 'Destroy', atendimento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+
+
+<br />
+
+<%= link_to 'New Atendimento', new_atendimento_path %>

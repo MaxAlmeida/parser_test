@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  AnoAtendimento: 1
+  TrimestreAtendimento: 1
+  MesAtendimento: 1
+  DataAtendimento: 2014-08-27
+  CodigoRegiao: 1
+  Regiao: MyString
+  UF: MyString
+  CodigoTipoAtendimento: 1
+  DescricaoTipoAtendimento: MyString
+  CodigoAssunto: 1
+  DescricaoAssunto: MyString
+  GrupoAssunto: MyString
+  CodigoProblema: 1
+  DescricaoProblema: MyString
+  GrupoProblema: MyString
+  SexoConsumidor: MyString
+  FaixaEtariaConsumidor: MyString
+  CEPConsumidor: 1
+
+two:
+  AnoAtendimento: 1
+  TrimestreAtendimento: 1
+  MesAtendimento: 1
+  DataAtendimento: 2014-08-27
+  CodigoRegiao: 1
+  Regiao: MyString
+  UF: MyString
+  CodigoTipoAtendimento: 1
+  DescricaoTipoAtendimento: MyString
+  CodigoAssunto: 1
+  DescricaoAssunto: MyString
+  GrupoAssunto: MyString
+  CodigoProblema: 1
+  DescricaoProblema: MyString
+  GrupoProblema: MyString
+  SexoConsumidor: MyString
+  FaixaEtariaConsumidor: MyString
+  CEPConsumidor: 1
