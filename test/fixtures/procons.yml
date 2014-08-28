@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  responsavel: MyString
+  cargo: MyString
+  endereco: MyString
+  DDD: 1
+  telefone: MyString
+  fax: MyString
+  email: MyString
+
+two:
+  responsavel: MyString
+  cargo: MyString
+  endereco: MyString
+  DDD: 1
+  telefone: MyString
+  fax: MyString
+  email: MyString

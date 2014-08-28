@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Responsavel:</b>
+  <%= @procon.responsavel %>
+</p>
+
+<p>
+  <b>Cargo:</b>
+  <%= @procon.cargo %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @procon.endereco %>
+</p>
+
+<p>
+  <b>Ddd:</b>
+  <%= @procon.DDD %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @procon.telefone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @procon.fax %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @procon.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_procon_path(@procon) %> |
+<%= link_to 'Back', procons_path %>

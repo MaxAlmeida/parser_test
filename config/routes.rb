@@ -1,4 +1,7 @@
 ParseTest::Application.routes.draw do
+  resources :procons
+
+
   resources :atendimentos
 
 
@@ -8,6 +11,9 @@ ParseTest::Application.routes.draw do
     collection {post :import}
   end
 
+resources :procons do
+    collection {post :import}
+  end
  
 
   # The priority is based upon order of creation:

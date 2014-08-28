@@ -1,0 +1,35 @@
+<h1>Listing procons</h1>
+
+<table>
+  <tr>
+    <th>Responsavel</th>
+    <th>Cargo</th>
+    <th>Endereco</th>
+    <th>Ddd</th>
+    <th>Telefone</th>
+    <th>Fax</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @procons.each do |procon| %>
+  <tr>
+    <td><%= procon.responsavel %></td>
+    <td><%= procon.cargo %></td>
+    <td><%= procon.endereco %></td>
+    <td><%= procon.DDD %></td>
+    <td><%= procon.telefone %></td>
+    <td><%= procon.fax %></td>
+    <td><%= procon.email %></td>
+    <td><%= link_to 'Show', procon %></td>
+    <td><%= link_to 'Edit', edit_procon_path(procon) %></td>
+    <td><%= link_to 'Destroy', procon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Procon', new_procon_path %>

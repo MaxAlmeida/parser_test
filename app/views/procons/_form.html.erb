@@ -1,0 +1,45 @@
+<%= form_for(@procon) do |f| %>
+  <% if @procon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@procon.errors.count, "error") %> prohibited this procon from being saved:</h2>
+
+      <ul>
+      <% @procon.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :responsavel %><br />
+    <%= f.text_field :responsavel %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br />
+    <%= f.text_field :cargo %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :DDD %><br />
+    <%= f.number_field :DDD %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
