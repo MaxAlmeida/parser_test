@@ -3,6 +3,6 @@
 <h2>Import Products</h2>
 
 <%= form_tag import_procons_path, multipart: true do %>
-  <%= file_field_tag :file %>
+  <%= file_field_tag :file, :multiple =>true %>
   <%= submit_tag "Import" %>
 <% end %>
