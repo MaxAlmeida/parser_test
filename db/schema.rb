@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140828004726) do
+ActiveRecord::Schema.define(:version => 20140831000300) do
 
   create_table "atendimentos", :force => true do |t|
     t.integer  "AnoAtendimento"
@@ -34,6 +34,16 @@ ActiveRecord::Schema.define(:version => 20140828004726) do
     t.integer  "CEPConsumidor"
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
+  end
+
+  create_table "fornecedors", :force => true do |t|
+    t.integer  "tipo_fornecedor"
+    t.string   "razao_social_sindec"
+    t.string   "nome_fantasia"
+    t.string   "cnpj"
+    t.string   "descricao_cnaep_principal"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "procons", :force => true do |t|

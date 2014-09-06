@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tipo fornecedor:</b>
+  <%= @fornecedor.tipo_fornecedor %>
+</p>
+
+<p>
+  <b>Razao social sindec:</b>
+  <%= @fornecedor.razao_social_sindec %>
+</p>
+
+<p>
+  <b>Nome fantasia:</b>
+  <%= @fornecedor.nome_fantasia %>
+</p>
+
+<p>
+  <b>Cnpj:</b>
+  <%= @fornecedor.cnpj %>
+</p>
+
+<p>
+  <b>Descricao cnaep principal:</b>
+  <%= @fornecedor.descricao_cnaep_principal %>
+</p>
+
+
+<%= link_to 'Edit', edit_fornecedor_path(@fornecedor) %> |
+<%= link_to 'Back', fornecedors_path %>

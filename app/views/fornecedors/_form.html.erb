@@ -1,0 +1,37 @@
+<%= form_for(@fornecedor) do |f| %>
+  <% if @fornecedor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fornecedor.errors.count, "error") %> prohibited this fornecedor from being saved:</h2>
+
+      <ul>
+      <% @fornecedor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo_fornecedor %><br />
+    <%= f.number_field :tipo_fornecedor %>
+  </div>
+  <div class="field">
+    <%= f.label :razao_social_sindec %><br />
+    <%= f.text_field :razao_social_sindec %>
+  </div>
+  <div class="field">
+    <%= f.label :nome_fantasia %><br />
+    <%= f.text_field :nome_fantasia %>
+  </div>
+  <div class="field">
+    <%= f.label :cnpj %><br />
+    <%= f.text_field :cnpj %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao_cnaep_principal %><br />
+    <%= f.text_field :descricao_cnaep_principal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

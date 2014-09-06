@@ -1,4 +1,7 @@
 ParseTest::Application.routes.draw do
+  resources :fornecedors
+
+
   resources :procons
 
 

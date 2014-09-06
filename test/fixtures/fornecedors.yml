@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tipo_fornecedor: 1
+  razao_social_sindec: MyString
+  nome_fantasia: MyString
+  cnpj: MyString
+  descricao_cnaep_principal: MyString
+
+two:
+  tipo_fornecedor: 1
+  razao_social_sindec: MyString
+  nome_fantasia: MyString
+  cnpj: MyString
+  descricao_cnaep_principal: MyString
